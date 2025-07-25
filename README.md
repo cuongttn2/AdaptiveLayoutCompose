@@ -15,3 +15,10 @@ The canonical layouts support small screen phones as well as tablets, foldables,
 See Also [Use window size classes](https://developer.android.com/develop/ui/compose/layouts/adaptive/use-window-size-classes?hl=vi)
 
 **Sample:** [List-detail with Compose](https://github.com/android/user-interface-samples/tree/main/CanonicalLayouts/list-detail-compose)
+
+## [Feed](https://developer.android.com/develop/ui/compose/layouts/adaptive/canonical-layouts#feed)
+A feed layout arranges equivalent content elements in a configurable grid for quick, convenient viewing of a large amount of content.
+Size and position establish relationships among the content elements.
+<img width="1708" height="854" alt="image" src="https://github.com/user-attachments/assets/47d3d88a-17b0-4620-887a-1389845837f5" />
+
+**Sample:** [Feed with Compose](https://github.com/android/user-interface-samples/tree/main/CanonicalLayouts/feed-compose)
