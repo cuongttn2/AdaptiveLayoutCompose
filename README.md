@@ -14,6 +14,8 @@ The canonical layouts support small screen phones as well as tablets, foldables,
 
 See Also [Use window size classes](https://developer.android.com/develop/ui/compose/layouts/adaptive/use-window-size-classes?hl=vi)
 
+Window size classes are a set of opinionated viewport breakpoints that help you design, develop, and test responsive/adaptive layouts. The breakpoints balance layout simplicity with the flexibility of optimizing your app for unique cases.
+
 **Sample:** [List-detail with Compose](https://github.com/android/user-interface-samples/tree/main/CanonicalLayouts/list-detail-compose)
 
 ## [Feed](https://developer.android.com/develop/ui/compose/layouts/adaptive/canonical-layouts#feed)
