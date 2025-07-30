@@ -8,7 +8,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import com.example.adaptivelayoutcompose.ui.listdetailcompose.FoldStateDemoScreen
+import com.example.adaptivelayoutcompose.ui.adaptive_foldable.AdaptiveFoldableScreen
+import com.example.adaptivelayoutcompose.ui.adaptive_foldable.AdaptiveFoldableScreenAdvanced
 import com.example.adaptivelayoutcompose.ui.theme.AdaptiveLayoutComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,7 +20,9 @@ class MainActivity : ComponentActivity() {
             AdaptiveLayoutComposeTheme {
                 Scaffold { innerPadding ->
 //                    ListDetailSample(modifier = Modifier.fillMaxSize().padding(innerPadding))
-                    FoldStateDemoScreen(modifier = Modifier.fillMaxSize().padding(innerPadding))
+//                    FoldStateDemoScreen(modifier = Modifier.fillMaxSize().padding(innerPadding))
+//                    AdaptiveFoldableScreen(modifier = Modifier.fillMaxSize().padding(innerPadding))
+                    AdaptiveFoldableScreenAdvanced(modifier = Modifier.fillMaxSize().padding(innerPadding))
                 }
             }
         }

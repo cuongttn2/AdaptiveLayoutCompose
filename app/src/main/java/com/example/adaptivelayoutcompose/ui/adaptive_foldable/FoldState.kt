@@ -1,4 +1,4 @@
-package com.example.adaptivelayoutcompose.ui.listdetailcompose
+package com.example.adaptivelayoutcompose.ui.adaptive_foldable
 
 sealed class FoldState {
     object HalfOpened : FoldState()

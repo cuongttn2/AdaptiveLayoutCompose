@@ -1,7 +1,6 @@
-package com.example.adaptivelayoutcompose.ui.listdetailcompose
+package com.example.adaptivelayoutcompose.ui.adaptive_foldable
 
 import android.app.Activity
-import android.content.Context
 import androidx.compose.foundation.layout.Box
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -17,6 +16,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.sp
 import androidx.window.layout.FoldingFeature
 import androidx.window.layout.WindowInfoTracker
+import com.example.adaptivelayoutcompose.ui.extensions.findActivity
 import kotlinx.coroutines.flow.map
 
 @Composable
@@ -62,11 +62,3 @@ fun rememberFoldState(activity: Activity): MutableState<FoldState> {
     return state
 }
 
-fun Context.findActivity(): Activity {
-    var ctx = this
-    while (ctx is android.content.ContextWrapper) {
-        if (ctx is Activity) return ctx
-        ctx = ctx.baseContext
-    }
-    throw IllegalStateException("Activity not found")
-}
