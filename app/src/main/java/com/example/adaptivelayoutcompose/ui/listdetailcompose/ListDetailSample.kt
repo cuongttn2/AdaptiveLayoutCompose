@@ -79,7 +79,7 @@ private data class DefinedWord(
 @SuppressLint("UnusedContentLambdaTargetStateParameter")
 @OptIn(ExperimentalMaterial3AdaptiveApi::class, ExperimentalSharedTransitionApi::class)
 @Composable
-fun ListDetailSample() {
+fun ListDetailSample(modifier: Modifier = Modifier) {
     var selectedWordIndex: Int? by rememberSaveable { mutableStateOf(null) }
     val navigator = rememberListDetailPaneScaffoldNavigator<Nothing>()
     val scope = rememberCoroutineScope()
@@ -92,7 +92,7 @@ fun ListDetailSample() {
         }
     }
 
-    SharedTransitionLayout {
+    SharedTransitionLayout(modifier = modifier) {
         AnimatedContent(targetState = isListAndDetailVisible, label = "simple sample") {
             ListDetailPaneScaffold(
                 directive = navigator.scaffoldDirective,
